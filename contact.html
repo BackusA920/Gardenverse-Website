@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gardenverse Contact Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="nav-header">
+    <div class="nav-container">
+      <div class="logo">Gardenverse</div>
+
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <button class="menu-icon" id="menuToggle">&#9776;</button>
+    </div>
+
+    <ul class="dropdown-menu" id="dropdownMenu">
+      <li><a href="plant-guide.html">Plant Guide</a></li>
+      <li><a href="soil-and-sunlight.html">Soil & Sunlight</a></li>
+      <li><a href="companion-planting.html">Companion Planting</a></li>
+      <li><a href="crossbreeding.html">Crossbreeding</a></li>
+      <li><a href="invasive.html">Invasive Species</a></li>
+      <li><a href="Help-Videos.html">Help Videos</a></li>
+    </ul>
+  </header>
+
+  <main>
+    <section class="contact-hours-wrapper">
+        <div class="contact-column">
+            <h2>Your Voice Matters</h2>
+            <p>We would love to hear from you!</p>
+
+            <form class="contact-form" action="#" method="POST">
+            <input type="text" name="name" placeholder="Your full name" required>
+            <input type="email" name="email" placeholder="you@example.com" required>
+            <input type="tel" name="phone" placeholder="Phone number (optional)">
+            <textarea name="message" rows="6" placeholder="Your message here..." required></textarea>
+            <button type="submit" class="cta-button">Send Message</button>
+            </form>
+        </div>
+
+        
+        <div class="hours-column">
+            <h2>Hours of Operation</h2>
+            <p>Our garden is open 24/7. Listed hours reflect when staff is available to assist.</p>
+            <table class="hours-table">
+            <thead>
+                <tr><th>Day</th><th>Hours</th></tr>
+            </thead>
+            <tbody>
+                <tr><td>Monday</td><td>Closed</td></tr>
+                <tr><td>Tuesday</td><td>8:00 AM – 1:00 PM</td></tr>
+                <tr><td>Wednesday</td><td>8:00 AM – 1:00 PM</td></tr>
+                <tr><td>Thursday</td><td>8:00 AM – 1:00 PM</td></tr>
+                <tr><td>Friday</td><td>8:00 AM – 1:00 PM</td></tr>
+                <tr><td>Saturday</td><td>8:00 AM – 5:00 PM</td></tr>
+                <tr><td>Sunday</td><td>8:00 AM – 1:00 PM</td></tr>
+            </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section class="map-section">
+        <h2>Visit Our Garden</h2>
+        <div class="map-container">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2904.324157679745!2d-87.68537408453136!3d44.09477647910945!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88038e2d0cd11fd9%3A0x49d1b3c92a3b7ce9!2s2344%20S%2014th%20St%2C%20Manitowoc%2C%20WI%2054220!5e0!3m2!1sen!2sus!4v1717427200000!5m2!1sen!2sus"
+            width="100%" height="300" style="border:0; border-radius:12px;" allowfullscreen="" loading="lazy">
+          </iframe>
+        </div>
+    </section>
+
+    <section class="contact-info">
+        <h2>Contact Us</h2>
+        <div class="contact-buttons">
+            <a href="mailto:info@gardenverse.org" class="contact-btn">Email Us</a>
+            <a href="tel:+19205551234" class="contact-btn">Call Us</a>
+            <a href="https://maps.google.com/?q=2344+S+14th+St,+Manitowoc,+WI+54220" target="_blank" class="contact-btn">Get Directions</a>
+        </div>
+    </section>
+</main>
+
+    <footer>
+      <p>&copy; 2025 April Backus · Web Developer · All Things Gardening</p>
+      <a href="#top">Back to top</a>
+    </footer>
+
+  </div>
+
+  <script>
+    const toggleButton = document.getElementById('menuToggle');
+    const dropdownMenu = document.getElementById('dropdownMenu');
+    toggleButton.addEventListener('click', () => {
+      dropdownMenu.classList.toggle('show');
+    });
+  </script>
+</div> 
+</body>
+</main>
+</html>
