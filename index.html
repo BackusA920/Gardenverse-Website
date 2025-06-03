@@ -14,32 +14,62 @@
   <meta property="og:type" content="website">
 </head>
 
-<body id="top">
-  <header>
-    <h1>Gardenverse</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="plant-guide.html">Plant Guide</a></li>
-        <li><a href="soil-and-sunlight.html">Soil & Sunlight</a></li>
-        <li><a href="companion-planting.html">Companion Planting</a></li>
-        <li><a href="crossbreeding.html">Crossbreeding</a></li>
-        <li><a href="invasive.html">Invasive Species</a></li>
-        <li><a href="events.html">Events</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="survey.html">Survey</a></li>
-      </ul>
-    </nav>
+<body>
+  <header class="nav-header">
+    <div class="nav-container">
+      <div class="logo">Gardenverse</div>
+
+      <div class="right-side">
+        <nav class="main-nav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="plant-guide.html">Plant Guide</a></li>
+            <li><a href="soil-and-sunlight.html">Soil & Sunlight</a></li>
+          </ul>
+        </nav>
+
+        <button class="menu-icon" id="menuToggle">&#9776;</button>
+      </div>
+    </div>
+
+    <ul class="dropdown-menu" id="dropdownMenu">
+      <li><a href="companion-planting.html">Companion Planting</a></li>
+      <li><a href="crossbreeding.html">Crossbreeding</a></li>
+      <li><a href="invasive.html">Invasive Species</a></li>
+      <li><a href="events.html">Events</a></li>
+      <li><a href="Help-Videos.html">Help Videos</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
   </header>
 
   <main>
-     <section class="welcome-photo">
-      <img src="assets/gardening.webp" width="500" alt="Welcome Garden Photo"/>
-    </section>
+     <section class="welcome-section">
+        <div class="welcome-photo">
+          <img src="assets/gardening.webp" alt="Welcome Garden Photo" />
+        </div>
 
-    <section class="welcome">
-      <h2>Welcome Gardeners!</h2>
-      <p>Welcome, Gardeners of All Kinds! New to gardening? Need a refresher? This site is your go-to guide for anyone interested in growing—whether you're just starting out, returning to the hobby, or a lifelong gardener. From soil testing and sunlight needs to pollinator-friendly planting and seasonal tips, we’ve gathered the essentials to help your garden thrive. With easy-to-follow advice, science-backed practices, and a passion for green spaces, this guide is designed for gardeners of all ages and experience levels. There’s something here for everyone—dig in and grow with us!</p>
+        <div class="welcome">
+          <h2>Welcome Gardeners!</h2>
+          <p>Welcome, Gardeners of All Kinds! New to gardening? Need a refresher? This site is your go-to guide for anyone interested in growing, whether you're just starting out, returning to the hobby, or a lifelong gardener. From soil testing and sunlight needs to pollinator-friendly planting and seasonal tips, we’ve gathered the essentials to help your garden thrive. With easy-to-follow advice, science-backed practices, and a passion for green spaces, this guide is designed for gardeners of all ages and experience levels. There’s something here for everyone, dig in and grow with us!</p>
+          <p>Be sure to check out the Zone Checker, and explore our other pages for more valuable tips on soil health, pollinators, and everything your garden needs to flourish.</p>
+        </div>
+      </section>
+
+    
+
+    <section class="zone-checker">
+      <div class="zone-text">
+        <h3>Know Your Zones</h3>
+        <p>Click below to visit the official USDA Hardiness Zone map and discover your planting zone.</p>
+      </div>
+
+      <div class="zone-image-link">
+        <a href="https://planthardiness.ars.usda.gov/" target="_blank">
+        <img src="/assets/Zone.png" alt="US Hardiness Zone Map"/>
+        </a>
+        <br>
+        <a href="https://planthardiness.ars.usda.gov/" target="_blank" class="cta-button">Visit the Zone Finder</a>
+      </div>
     </section>
 
     <section class="highlights-grid">
@@ -49,8 +79,17 @@
       <div class="highlight">Find invasive species to avoid and how to spot them.</div>
     </section>
 
+
     <section class="feature-images">
-      <img src="assets/ecology.webp" width="500" alt="Community Garden Image 1"/>
+      <img src="assets/ecology.webp" width="500" alt="Ecology Garden Image"/>
+      <img src="assets/gardening.webp" width="500" alt="Community Garden Image"/>
+      <img src="assets/Soil.webp" width="500" alt="Soil Garden Image 1"/>
+      <img src="assets/strawberrie.webp" width="500" alt=" Garden Image"/>
+    </section>
+
+    <section class="community-message">
+      <h2>About Our Community Garden</h2>
+      <p>Our community garden is a shared space where people from all walks of life come together to grow, learn, and support each other. Volunteers of all ages contribute to planting, maintaining, and harvesting — and the fresh produce we grow is shared among everyone who helps. It’s gardening with purpose and community at heart.</p>
     </section>
 
     <section class="call-to-action">
@@ -61,9 +100,20 @@
   </main>
 
   <footer>
-    <p>&copy; 2025 All Things Gardening. Designed for gardeners of all kinds.</p>
+    <p>&copy; 2025 April Backus · Web Developer · All Things Gardening</p>
     <a href="#top">Back to top</a>
   </footer>
+
+  <script>
+    const toggleButton = document.getElementById('menuToggle');
+    const dropdownMenu = document.getElementById('dropdownMenu');
+
+    toggleButton.addEventListener('click', () => {
+      dropdownMenu.classList.toggle('show');
+    });
+  </script>
+
+
 </body>
 
 </html>
